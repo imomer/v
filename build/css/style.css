@@ -46,6 +46,9 @@ aside,
 footer {
   display: block; }
 
+body {
+  font-family: 'Helvetica', Helvetica, Arial, sans-serif; }
+
 /* ====================== */
 /*         LAYOUT         */
 /* ====================== */
@@ -119,11 +122,13 @@ footer {
   #lowerFooter a {
     font-size: 15px;
     color: #ffffff;
-    text-decoration: none;
-    border-left: 1px solid #ffffff;
-    padding: 0 10px 0 10px; }
+    text-decoration: none; }
     #lowerFooter a:hover {
       color: #999999; }
+  #lowerFooter span {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    padding: 0 10px 0 10px; }
 
 /* ======== BASE ======== */
 .container {
