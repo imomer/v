@@ -1,0 +1,24 @@
+{
+  "name": "vigil-antislip",
+  "version": "1.0.0",
+  "description": "Build System for Vigil Antislip HTML with Gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omer Hussain",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imomer/vigil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imomer/vigil/issues"
+  },
+  "homepage": "https://github.com/imomer/vigil#readme"
+}

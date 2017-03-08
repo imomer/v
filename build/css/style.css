@@ -1,0 +1,131 @@
+/* Dojo v1.1 */
+/* ====================== */
+/*         ASSETS         */
+/* ====================== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none; }
+
+:focus {
+  outline: 0; }
+
+.clear {
+  clear: both;
+  line-height: 0;
+  font-size: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block; }
+
+/* ====================== */
+/*         LAYOUT         */
+/* ====================== */
+/* ======= HEADER ======= */
+/* ======= FOOTER ======= */
+#upperFooter {
+  background: #000000;
+  padding: 53px 0 90px 0;
+  overflow: hidden; }
+  #upperFooter .upperFooterLeft {
+    width: 350px;
+    display: inline-block;
+    float: left; }
+    #upperFooter .upperFooterLeft img {
+      width: 122px;
+      height: 63px;
+      margin-bottom: 29px; }
+    #upperFooter .upperFooterLeft p {
+      color: #999999;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 35px;
+      width: 300px; }
+    #upperFooter .upperFooterLeft .likePage {
+      font-size: 15px;
+      color: #999999; }
+      #upperFooter .upperFooterLeft .likePage .fa-facebook {
+        color: #000000;
+        background: #999999;
+        width: 24px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+        border-radius: 50%;
+        margin-right: 9px; }
+        #upperFooter .upperFooterLeft .likePage .fa-facebook:hover {
+          background: #ed1c24;
+          color: #ffffff; }
+      #upperFooter .upperFooterLeft .likePage a {
+        font-size: 15px;
+        color: #ffffff; }
+        #upperFooter .upperFooterLeft .likePage a:hover {
+          color: #ed1c24; }
+  #upperFooter .upperFooterRight {
+    width: 222px;
+    float: left;
+    padding-top: 20px; }
+    #upperFooter .upperFooterRight h6 {
+      color: #ffffff;
+      font-size: 17px;
+      margin-bottom: 28px; }
+    #upperFooter .upperFooterRight ul {
+      list-style: none;
+      margin-bottom: 10px; }
+    #upperFooter .upperFooterRight li {
+      line-height: 23px; }
+    #upperFooter .upperFooterRight a {
+      font-size: 15px;
+      color: #999999;
+      text-decoration: none;
+      margin-bottom: 6px;
+      display: block; }
+      #upperFooter .upperFooterRight a:hover {
+        color: #ed1c24; }
+
+#lowerFooter {
+  background: #ed1c24;
+  color: #ffffff;
+  text-align: center;
+  line-height: 42px; }
+  #lowerFooter a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 1px solid #ffffff;
+    padding: 0 10px 0 10px; }
+    #lowerFooter a:hover {
+      color: #999999; }
+
+/* ======== BASE ======== */
+.container {
+  width: 1016px;
+  margin: 0 auto; }
