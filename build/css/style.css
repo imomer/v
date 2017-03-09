@@ -90,7 +90,7 @@ body {
         line-height: 24px;
         font-size: 16px;
         border-radius: 50%;
-        margin-right: 9px; }
+        margin-right: 5px; }
         #upperFooter .upperFooterLeft .likePage .fa-facebook:hover {
           background: #ed1c24;
           color: #ffffff; }
@@ -131,7 +131,7 @@ body {
     color: #ffffff;
     text-decoration: none; }
     #lowerFooter a:hover {
-      color: #999999; }
+      color: #000000; }
   #lowerFooter span {
     border-left: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
@@ -139,5 +139,19 @@ body {
 
 /* ======== BASE ======== */
 .container {
-  width: 1016px;
+  Width: 1016px;
   margin: 0 auto; }
+
+#topBar {
+  line-height: 41px;
+  background: #ed1c24;
+  color: #ffffff;
+  font-size: 13px; }
+  #topBar .container {
+    text-align: right; }
+  #topBar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px; }
+    #topBar a:hover {
+      color: #000000; }
