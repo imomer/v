@@ -46,8 +46,15 @@ aside,
 footer {
   display: block; }
 
+@font-face {
+  font-family: 'Helvetica-Light';
+  src: url("../fonts/HelveticaLTStd-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLTStd-Light.woff2") format("woff2"), url("../fonts/HelveticaLTStd-Light.woff") format("woff"), url("../fonts/HelveticaLTStd-Light.otf") format("opentype"), url("../fonts/HelveticaLTStd-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 body {
-  font-family: 'Helvetica', Helvetica, Arial, sans-serif; }
+  font-family: 'Helvetica-Light', Arial, sans-serif; }
 
 /* ====================== */
 /*         LAYOUT         */
