@@ -32,10 +32,7 @@
                 font-size: 16px;
                 border-radius: 50%;
                 margin-right: 5px;
-                &:hover {
-                    background: $crimson;
-                    color: $white;
-                }
+
             }
             a {
                 font-size: 15px;
@@ -92,11 +89,6 @@
         &:hover {
             color: $black;
         }
-    }
-    span {
-        border-left: 1px solid $white;
-        border-right: 1px solid $white;
-        padding: 0 10px 0 10px;
     }
 
 }

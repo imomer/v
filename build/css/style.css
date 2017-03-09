@@ -91,9 +91,6 @@ body {
         font-size: 16px;
         border-radius: 50%;
         margin-right: 5px; }
-        #upperFooter .upperFooterLeft .likePage .fa-facebook:hover {
-          background: #ed1c24;
-          color: #ffffff; }
       #upperFooter .upperFooterLeft .likePage a {
         font-size: 15px;
         color: #ffffff; }
@@ -132,10 +129,6 @@ body {
     text-decoration: none; }
     #lowerFooter a:hover {
       color: #000000; }
-  #lowerFooter span {
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    padding: 0 10px 0 10px; }
 
 /* ======== BASE ======== */
 .container {
