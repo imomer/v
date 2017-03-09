@@ -60,6 +60,9 @@ body {
 /*         LAYOUT         */
 /* ====================== */
 /* ======= HEADER ======= */
+#header {
+  height: 113px; }
+
 /* ======= FOOTER ======= */
 #upperFooter {
   background: #000000;
