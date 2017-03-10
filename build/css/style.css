@@ -110,7 +110,7 @@ body {
         font-size: 18px;
         text-decoration: none; }
         #maneNave ul li a:hover {
-          color: red; }
+          color: #ed1c24; }
       #maneNave ul li:hover > ul {
         display: block; }
       #maneNave ul li ul {
@@ -146,6 +146,10 @@ body {
     width: 350px;
     display: inline-block;
     float: left; }
+    @media (max-width: 767px) {
+      #upperFooter .upperFooterLeft {
+        text-align: center;
+        padding: 0 11px 0 11px; } }
     #upperFooter .upperFooterLeft img {
       width: 122px;
       height: 63px;
@@ -156,6 +160,9 @@ body {
       line-height: 22px;
       margin-bottom: 35px;
       width: 300px; }
+      @media (max-width: 767px) {
+        #upperFooter .upperFooterLeft p {
+          width: 100%; } }
     #upperFooter .upperFooterLeft .likePage {
       font-size: 15px;
       color: #999999; }
@@ -177,6 +184,9 @@ body {
     width: 222px;
     float: left;
     padding-top: 20px; }
+    @media (max-width: 767px) {
+      #upperFooter .upperFooterRight {
+        display: none; } }
     #upperFooter .upperFooterRight h6 {
       color: #ffffff;
       font-size: 17px;
@@ -199,6 +209,10 @@ body {
   color: #ffffff;
   text-align: center;
   line-height: 42px; }
+  @media (max-width: 767px) {
+    #lowerFooter {
+      line-height: 28px;
+      padding: 20px 37px 20px 37px; } }
   #lowerFooter a {
     font-size: 15px;
     color: #ffffff;

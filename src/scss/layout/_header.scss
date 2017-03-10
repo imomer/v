@@ -59,10 +59,8 @@
                 font-size: 18px;
                 text-decoration: none;
                 &:hover {
-                    color: red;
-
+                    color: $crimson;
                 }
-
             }
             &:hover {
                 > a {
@@ -83,6 +81,7 @@
                 li {
                     border-bottom: 1px solid $black;
                     width: 201px;
+
                     a {
                         line-height: 40px;
                         width: 201px;
