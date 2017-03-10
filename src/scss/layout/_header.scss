@@ -1,13 +1,12 @@
 /* ======= HEADER ======= */
 #header {
     height: 113px;
-    overflow: hidden;
     line-height: 70px;
     padding-top: 16px;
-	.container {
+    .container {
         width: 1237px;
     }
-    h1{
+    h1 {
         width: 158px;
         height: auto;
         a {
@@ -20,6 +19,7 @@
         }
     }
 }
+
 #maneNave {
     float: right;
     width: 1015px;
@@ -27,8 +27,37 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        li {
+        .menu-item-has-children {
+            position: relative;
+            a {
+                padding: 0 13px;
+                &:hover{
 
+                }
+            }
+        }
+        .menu-item-has-children::before {
+            content: "\f0d7";
+            right: 0;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            display: inline-block;
+
+        }
+        li {
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "";
+                right: 0;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                display: inline-block;
+            }
             a {
                 padding: 0 13px 0 13px;
                 color: $black;
@@ -37,9 +66,45 @@
                 display: block;
                 float: left;
                 &:hover {
-                    color: $black;
-                    background: red;
+                    color: red;
 
+                }
+
+            }
+            &:hover {
+                > a {
+
+                }
+                > ul {
+                    display: block;
+                }
+            }
+            ul {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 1000;
+                background: red;
+                line-height: 5px;
+                display: none;
+                li {
+                    border-bottom: 1px solid $black;
+                    width: 201px;
+                    a {
+                        line-height: 40px;
+                        width: 201px;
+                        float: none;
+                        color: #ffffff;
+                        &:hover {
+                            color: #ffffff;
+                        }
+
+                    }
+                }
+                ul {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
                 }
             }
         }

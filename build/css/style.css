@@ -62,7 +62,6 @@ body {
 /* ======= HEADER ======= */
 #header {
   height: 113px;
-  overflow: hidden;
   line-height: 70px;
   padding-top: 16px; }
   #header .container {
@@ -85,19 +84,66 @@ body {
     list-style: none;
     padding: 0;
     margin: 0; }
-    #maneNave ul li a {
-      padding: 0 13px 0 13px;
-      color: #000000;
-      font-size: 18px;
-      text-decoration: none;
-      display: block;
-      float: left; }
-      #maneNave ul li a:hover {
+    #maneNave ul .menu-item-has-children {
+      position: relative; }
+      #maneNave ul .menu-item-has-children a {
+        padding: 0 13px; }
+    #maneNave ul .menu-item-has-children::before {
+      content: "\f0d7";
+      right: 0;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      display: inline-block; }
+    #maneNave ul li {
+      position: relative;
+      display: inline-block; }
+      #maneNave ul li::before {
+        content: "";
+        right: 0;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        display: inline-block; }
+      #maneNave ul li a {
+        padding: 0 13px 0 13px;
         color: #000000;
-        background: red; }
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+        float: left; }
+        #maneNave ul li a:hover {
+          color: red; }
+      #maneNave ul li:hover > ul {
+        display: block; }
+      #maneNave ul li ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        background: red;
+        line-height: 5px;
+        display: none; }
+        #maneNave ul li ul li {
+          border-bottom: 1px solid #000000;
+          width: 201px; }
+          #maneNave ul li ul li a {
+            line-height: 40px;
+            width: 201px;
+            float: none;
+            color: #ffffff; }
+            #maneNave ul li ul li a:hover {
+              color: #ffffff; }
+        #maneNave ul li ul ul {
+          position: absolute;
+          top: 0;
+          left: 100%; }
 
 /* ======= FOOTER ======= */
 #upperFooter {
+  clear: both;
   background: #000000;
   padding: 53px 0 90px 0;
   overflow: hidden; }
