@@ -94,27 +94,21 @@ body {
       position: relative; }
       #maneNave ul .menu-item-has-children a {
         padding: 0 13px; }
-    #maneNave ul .menu-item-has-children::before {
+    #maneNave ul .menu-item-has-children:before {
       content: "\f0d7";
-      right: 0;
+      right: -2px;
+      top: -2px;
+      position: absolute;
       font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      display: inline-block; }
+      color: #dadada; }
     #maneNave ul li {
       position: relative;
-      display: inline-block; }
-      #maneNave ul li::before {
-        width: 5px;
-        display: inline-block; }
+      float: left; }
       #maneNave ul li a {
         padding: 0 13px 0 13px;
         color: #000000;
         font-size: 18px;
-        text-decoration: none;
-        display: block;
-        float: left; }
+        text-decoration: none; }
         #maneNave ul li a:hover {
           color: red; }
       #maneNave ul li:hover > ul {

@@ -35,42 +35,29 @@
             position: relative;
             a {
                 padding: 0 13px;
-                &:hover{
+                &:hover {
 
                 }
             }
         }
-        .menu-item-has-children::before {
-            content: "\f0d7";
-            right: 0;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
-            display: inline-block;
-
+        .menu-item-has-children {
+            &:before {
+                content: "\f0d7";
+                right: -2px;
+                top: -2px;
+                position: absolute;
+                font-family: FontAwesome;
+                color: $alto;
+            }
         }
         li {
             position: relative;
-            display: inline-block;
-            &::before {
-                width: 5px;
-                display: inline-block;
-                //content: "";
-                //right: 0;
-                //font-family: FontAwesome;
-                //font-style: normal;
-                //font-weight: normal;
-                //text-decoration: inherit;
-                //display: inline-block;
-            }
+            float: left;
             a {
                 padding: 0 13px 0 13px;
                 color: $black;
                 font-size: 18px;
                 text-decoration: none;
-                display: block;
-                float: left;
                 &:hover {
                     color: red;
 
@@ -116,4 +103,5 @@
         }
 
     }
+
 }
