@@ -83,7 +83,13 @@ body {
   #maneNave ul {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
+    display: flex;
+    align-items: center; }
     #maneNave ul .menu-item-has-children {
       position: relative; }
       #maneNave ul .menu-item-has-children a {
@@ -100,12 +106,7 @@ body {
       position: relative;
       display: inline-block; }
       #maneNave ul li::before {
-        content: "";
-        right: 0;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
+        width: 5px;
         display: inline-block; }
       #maneNave ul li a {
         padding: 0 13px 0 13px;
@@ -195,8 +196,7 @@ body {
       font-size: 15px;
       color: #999999;
       text-decoration: none;
-      margin-bottom: 6px;
-      display: block; }
+      line-height: 26px; }
       #upperFooter .upperFooterRight a:hover {
         color: #ed1c24; }
 
