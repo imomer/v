@@ -3,4 +3,7 @@
     Width: 1016px;
     margin: 0 auto;
     overflow: hidden;
+    @include media('<tablet'){
+        width: 100%;
+    }
 }
