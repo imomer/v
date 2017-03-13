@@ -72,7 +72,8 @@ h2 {
   line-height: 70px;
   padding-top: 16px; }
   #header .container {
-    width: 1237px; }
+    width: 1237px;
+    overflow: inherit; }
   #header h1 {
     width: 158px;
     height: auto; }
@@ -233,6 +234,9 @@ h2 {
   Width: 1016px;
   margin: 0 auto;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%; } }
 
 #topBar {
   line-height: 41px;
@@ -262,7 +266,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 46px 20px 0 20px; }
+    padding: 37px 20px 0 20px; }
     #banner .bannerOverlay h1 {
       color: #ffffff;
       font-size: 41px;
@@ -294,19 +298,19 @@ h2 {
     #homeContent .homeContentLeft h2 {
       font-size: 37px;
       color: #000000;
-      margin-bottom: 42px; }
+      margin-bottom: 38px; }
     #homeContent .homeContentLeft p {
       font-size: 18px;
       color: #000000;
-      margin-bottom: 42px; }
+      margin-bottom: 38px; }
   #homeContent .homeContentRight {
     float: right;
     width: 399px;
     height: 422px;
     text-align: center;
     background: url("../images/home-img.png") no-repeat;
-    padding: 75px 38px 68px 38px;
-    margin-top: 43px; }
+    padding: 55px 38px 0 38px;
+    margin-top: 75px; }
     #homeContent .homeContentRight h3 {
       font-size: 31px;
       color: #ffffff;
@@ -323,7 +327,7 @@ h2 {
       text-transform: uppercase;
       background: #ed1c24;
       padding: 0 73px 0 73px;
-      line-height: 55px;
+      line-height: 52px;
       display: inline-block;
       text-decoration: none; }
       #homeContent .homeContentRight .button:hover {
