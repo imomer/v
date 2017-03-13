@@ -1,0 +1,58 @@
+//  homeContent  //
+#homeContent {
+    padding:120px 0 154px 0;
+    .homeContentLeft {
+        width: 564px;
+        float: left;
+        h2{
+            font-size: 37px;
+            color: $black;
+            margin-bottom: 42px;
+        }
+        p{
+            font-size: 18px;
+            color: $black;
+            margin-bottom: 42px;
+        }
+
+    }
+    .homeContentRight{
+        float: right;
+        width: 399px;
+        height:422px;
+        text-align: center;
+        background: url("../images/home-img.png") no-repeat;
+        padding: 75px 38px 68px 38px;
+        margin-top: 43px;
+
+        h3{
+            font-size: 31px;
+            color: $white;
+            margin-bottom: 31px;
+        }
+        p{
+            font-size: 18px;
+            color: $white;
+            line-height: 28px;
+            margin-bottom: 38px;
+        }
+        .button{
+            font-size: 20px;
+            color: $white;
+            font-weight:900;
+            text-transform: uppercase;
+            background: $crimson;
+            padding: 0 73px 0 73px;
+            line-height: 55px;
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                background: $white;
+                color: $crimson;
+
+            }
+
+        }
+    }
+}
