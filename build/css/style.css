@@ -56,6 +56,13 @@ footer {
 body {
   font-family: 'Helvetica-Light', Arial, sans-serif; }
 
+h1 {
+  font-size: 41px; }
+
+h2 {
+  font-size: 37px;
+  font-weight: 100; }
+
 /* ====================== */
 /*         LAYOUT         */
 /* ====================== */
@@ -322,3 +329,8 @@ body {
       #homeContent .homeContentRight .button:hover {
         background: #ffffff;
         color: #ed1c24; }
+
+/* Home page catalogue */
+#exploreCatalogue {
+  text-align: center;
+  padding: 65px 0 0; }
