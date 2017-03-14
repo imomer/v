@@ -61,7 +61,8 @@ h1 {
 
 h2 {
   font-size: 37px;
-  font-weight: 100; }
+  font-weight: 100;
+  margin: 0 0 10px; }
 
 /* ====================== */
 /*         LAYOUT         */
@@ -338,3 +339,21 @@ h2 {
 #exploreCatalogue {
   text-align: center;
   padding: 65px 0 0; }
+
+/* ==== Tabs ==== */
+.tabWrap ul {
+  border-bottom: #ededed 1px solid;
+  height: 43px; }
+  .tabWrap ul li {
+    display: inline-block;
+    margin: 0 5px; }
+    .tabWrap ul li a {
+      color: #121212;
+      text-decoration: none;
+      line-height: 40px;
+      border-bottom: transparent 4px solid;
+      display: block;
+      padding: 0 10px; }
+    .tabWrap ul li.activeTab a {
+      color: #ed1c24;
+      border-color: #ed1c24; }

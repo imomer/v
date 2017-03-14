@@ -1,0 +1,25 @@
+/* ==== Tabs ==== */
+.tabWrap {
+    ul {
+        border-bottom: $gallery 1px solid;
+        height: 43px;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: $codGray;
+                text-decoration: none;
+                line-height: 40px;
+                border-bottom: transparent 4px solid;
+                display: block;
+                padding: 0 10px;
+            }
+            &.activeTab {
+                a {
+                    color: $crimson;
+                    border-color: $crimson;
+                }
+            }
+        }
+    }
+}
