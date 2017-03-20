@@ -218,12 +218,14 @@ textarea {
       color: #dadada; }
     #maneNave ul li {
       position: relative;
-      float: left; }
+      float: left;
+      padding: 0 7px 0 0; }
       #maneNave ul li a {
         padding: 0 13px 0 13px;
         color: #000000;
         font-size: 18px;
-        text-decoration: none; }
+        text-decoration: none;
+        display: block; }
         #maneNave ul li a:hover {
           color: #ed1c24; }
       #maneNave ul li:hover > ul {

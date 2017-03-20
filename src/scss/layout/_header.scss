@@ -33,6 +33,7 @@
         -webkit-align-items: center; /* Safari 7.0+ */
         display: flex;
         align-items: center;
+
         .menu-item-has-children {
             position: relative;
             a {
@@ -55,11 +56,14 @@
         li {
             position: relative;
             float: left;
+            padding: 0 7px 0 0;
+
             a {
                 padding: 0 13px 0 13px;
                 color: $black;
                 font-size: 18px;
                 text-decoration: none;
+                display: block;
                 &:hover {
                     color: $crimson;
                 }
