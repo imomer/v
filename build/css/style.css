@@ -634,3 +634,44 @@ textarea {
     #contactUs .container img {
       float: right;
       vertical-align: top; }
+
+#requestSameple {
+  background: url(../images/request.jpg) no-repeat top left;
+  overflow: hidden;
+  background-size: auto 100%; }
+
+.requestContent {
+  width: 540px;
+  float: right;
+  background: #000000;
+  border-left: 1px solid #ffffff;
+  padding: 51px 20px 51px 45px;
+  color: #ffffff; }
+  .requestContent h2 {
+    margin-bottom: 20px; }
+  .requestContent ul {
+    margin-left: 45px;
+    list-style: none;
+    margin-bottom: 40px; }
+    .requestContent ul li {
+      position: relative;
+      margin-bottom: 25px; }
+      .requestContent ul li:before {
+        width: 25px;
+        height: 25px;
+        background: #ffffff;
+        border-radius: 50px;
+        color: #000000;
+        line-height: 25px;
+        text-align: center;
+        font-family: 'FontAwesome';
+        content: '\f00c';
+        position: absolute;
+        left: -45px; }
+  .requestContent .button {
+    font-family: 'Helvetica-Bold';
+    padding: 0 41px; }
+    .requestContent .button:hover {
+      background: #ffffff;
+      color: #ed1c24;
+      font-family: 'Helvetica-Bold'; }
