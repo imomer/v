@@ -81,7 +81,7 @@
                 margin-bottom: 17px;
                 border: none;
             }
-            input[type=Subject]{
+            input[type=text]{
                 background: $white;
                 padding: 8px;
                 font-size: 15px;
@@ -123,6 +123,18 @@
 
                 }
 
+            }
+            #myselect {
+                background: $white;
+                padding: 8px;
+                font-size: 15px;
+                width: 100%;
+                height: auto !important;
+                display: inline-block;
+                color: $black;
+                line-height: 23px;
+                margin-bottom: 17px;
+                border: none;
             }
 
 
