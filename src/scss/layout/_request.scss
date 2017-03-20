@@ -1,52 +1,59 @@
 #requestSameple {
-   background: url(../images/request.jpg) no-repeat top left;
-   overflow: hidden;
-   background-size: auto 100%;
-}
-
-.requestContent {
-    width:540px;
-    float: right;
-    background: $black;
-    border-left: 1px solid $white;
-    padding: 51px 20px 51px 45px;
-    color: $white;
-
-    h2 {
-        margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    .requestImg {
+        background: url(../images/request.jpg) no-repeat center center;
+        width: 70%;
+        overflow: hidden;
+        float: left;
+        flex: 2;
     }
-    ul {
-        margin-left: 45px;
-        list-style:none;
-        margin-bottom:40px;
-        li{
-            position: relative;
-            margin-bottom: 25px;
-            &:before {
-                width: 25px;
-                height: 25px;
+    .requestContent {
+        width: 540px;
+        float: right;
+        background: $black;
+        border-left: 3px solid $white;
+        padding: 51px 20px 51px 45px;
+        color: $white;
+        flex: 1;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-left: 45px;
+            list-style: none;
+            margin-bottom: 40px;
+            li {
+                position: relative;
+                margin-bottom: 25px;
+                &:before {
+                    width: 25px;
+                    height: 25px;
+                    background: $white;
+                    border-radius: 50px;
+                    color: $black;
+                    line-height: 25px;
+                    text-align: center;
+                    font-family: 'FontAwesome';
+                    content: '\f00c';
+                    position: absolute;
+                    left: -45px;
+
+                }
+            }
+        }
+        .button {
+            font-family: 'Helvetica-Bold';
+            padding: 0 41px;
+            &:hover {
                 background: $white;
-                border-radius: 50px;
-                color:$black;
-                line-height: 25px;
-                text-align: center;
-                font-family: 'FontAwesome';
-                content: '\f00c';
-                position: absolute;
-                left: -45px;
-                
+                color: $crimson;
+                font-family: 'Helvetica-Bold';
             }
         }
     }
-    .button {
-       font-family: 'Helvetica-Bold';
-       padding: 0 41px;
-        &:hover {
-            background: $white;
-            color: $crimson;
-             font-family: 'Helvetica-Bold';
-        }
-    }
 }
+
 
 
