@@ -443,9 +443,12 @@ textarea {
 /* Home page catalogue */
 #exploreCatalogue {
   text-align: center;
-  padding: 65px 0 0; }
+  padding: 65px 0 120px;
+  overflow: hidden; }
   #exploreCatalogue h2 {
     margin: 0 0 20px; }
+  #exploreCatalogue .tabWrap ul {
+    margin: 0 0 125px; }
   #exploreCatalogue .post {
     float: left; }
 
@@ -474,15 +477,46 @@ textarea {
 
 .post {
   width: 291px;
-  text-align: left;
-  zoom: 1; }
+  height: 296px;
+  text-align: left; }
   .post img {
     width: 100%;
     vertical-align: top; }
   .post h3 {
     font-size: 18px;
     font-family: 'Helvetica-Bold';
-    line-height: 40px; }
+    line-height: 40px;
+    transition: line-height 150ms, background 150ms, padding 150ms, color 150ms;
+    margin: 0; }
+    .post h3 i {
+      width: 21px;
+      height: 21px;
+      background: #ed1c24;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 50%;
+      float: right;
+      line-height: 21px;
+      margin: 21px 0 0;
+      opacity: 0;
+      transition: opacity 150ms; }
   .post a {
     color: #121212;
     text-decoration: none; }
+  .post div {
+    width: 291px;
+    transition: width 150ms, transform 150ms;
+    z-index: 1;
+    position: relative;
+    transform: translate(0, 0); }
+  .post:hover div {
+    width: 334px;
+    z-index: 2;
+    transform: translate(-22px, -35px); }
+  .post:hover h3 {
+    line-height: 66px;
+    background: #000000;
+    padding: 0 21px;
+    color: #ffffff; }
+    .post:hover h3 i {
+      opacity: 1; }
