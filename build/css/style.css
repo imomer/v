@@ -596,7 +596,7 @@ textarea {
         line-height: 23px;
         margin-bottom: 17px;
         border: none; }
-      #contactUs .container .contactForm input[type=Subject] {
+      #contactUs .container .contactForm input[type=text] {
         background: #ffffff;
         padding: 8px;
         font-size: 15px;
@@ -631,6 +631,17 @@ textarea {
         #contactUs .container .contactForm .button:hover {
           background: #ffffff;
           color: #000000; }
+      #contactUs .container .contactForm #myselect {
+        background: #ffffff;
+        padding: 8px;
+        font-size: 15px;
+        width: 100%;
+        height: auto !important;
+        display: inline-block;
+        color: #000000;
+        line-height: 23px;
+        margin-bottom: 17px;
+        border: none; }
     #contactUs .container img {
       float: right;
       vertical-align: top; }
