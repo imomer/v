@@ -456,7 +456,10 @@ textarea {
   #exploreCatalogue .tabWrap ul {
     margin: 0 0 125px; }
   #exploreCatalogue .post {
-    float: left; }
+    float: left;
+    padding: 40px 0 0; }
+  #exploreCatalogue .cat1 {
+    height: 360px; }
 
 /* ==== Tabs ==== */
 .tabWrap ul {
@@ -517,7 +520,7 @@ textarea {
     transform: translate(0, 0); }
   .post:hover div {
     width: 334px;
-    z-index: 2;
+    z-index: 9999;
     transform: translate(-22px, -35px); }
   .post:hover h3 {
     line-height: 66px;

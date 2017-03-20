@@ -8,6 +8,9 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.carousel.min.js"></script>
+    <script>$.fn.cycle.defaults.autoSelector = '.cat1';</script>
     <script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
@@ -17,7 +20,6 @@
     <div class="container">
         AUS:&nbsp;<a href="#">&nbsp;&nbsp;+61 8 9434 4773</a>&nbsp;&nbsp;&nbsp;US:&nbsp;<a href="#">&nbsp;+61 8 9434
         4779&nbsp;&nbsp;</a>&nbsp;&nbsp;Email:&nbsp;&nbsp;<a href="#">vigil@vigilantislip.com</a>
-
     </div>
 </div>
 <!-- top bar-->
@@ -108,7 +110,16 @@
         <div class="tabs">
             <div id="cat1" class="tab">
 
-                <article class="post">
+                <div class="cat1"
+                     data-cycle-fx=carousel
+                     data-cycle-timeout=0
+                     data-cycle-carousel-visible=6
+                     data-cycle-next="#nextNews"
+                     data-cycle-prev="#prevNews"
+                     data-cycle-slides="> article"
+                >
+
+                    <article class="post">
                     <a href="#">
                         <div>
                             <img src="images/thumb1.jpg" alt="">
@@ -116,38 +127,88 @@
                         </div>
                     </a>
                 </article>
-                <article class="post">
-                    <a href="#">
-                        <div>
-                            <img src="images/thumb2.jpg" alt="">
-                            <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
-                        </div>
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="#">
-                        <div>
-                            <img src="images/thumb3.jpg" alt="">
-                            <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
-                        </div>
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="#">
-                        <div>
-                            <img src="images/thumb4.jpg" alt="">
-                            <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
-                        </div>
-                    </a>
-                </article>
-                <article class="post">
-                    <a href="#">
-                        <div>
-                            <img src="images/thumb4.jpg" alt="">
-                            <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
-                        </div>
-                    </a>
-                </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb4.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb2.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb3.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb4.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb1.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>adder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb4.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb2.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb3.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="#">
+                            <div>
+                                <img src="images/thumb4.jpg" alt="">
+                                <h3><i class="fa fa-angle-right" aria-hidden="true"></i>Ladder Run Covers</h3>
+                            </div>
+                        </a>
+                    </article>
+
+
+
+                </div>
+
+                <div class="slideShowControls">
+                    <a href=# id="prevNews"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a href=# id="nextNews"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
 
 
             </div>
