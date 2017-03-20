@@ -1,5 +1,6 @@
 /* ==== Tabs ==== */
 .tabWrap {
+    // Tabs 
     ul {
         border-bottom: $gallery 1px solid;
         height: 43px;
@@ -19,6 +20,16 @@
                     color: $crimson;
                     border-color: $crimson;
                 }
+            }
+        }
+    }
+    
+    // Tabs divs
+    .tabs {
+        .tab {
+            display: none;
+            &:first-child {
+                display: block;
             }
         }
     }

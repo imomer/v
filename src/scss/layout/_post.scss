@@ -1,0 +1,19 @@
+// Catalogue posts
+.post {
+    width: 291px;
+    text-align: left;
+    zoom: 1;
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+    h3 {
+        font-size: 18px;
+        font-family: 'Helvetica-Bold';
+        line-height: 40px;
+    }
+    a {
+        color: $codGray;
+        text-decoration: none;
+    }
+}

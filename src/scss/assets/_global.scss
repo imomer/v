@@ -4,17 +4,159 @@
     src: url('../fonts/HelveticaLTStd-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/HelveticaLTStd-Light.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/HelveticaLTStd-Light.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/HelveticaLTStd-Light.otf')  format('opentype'), /* Safari, Android, iOS */
+    url('../fonts/HelveticaLTStd-Light.otf') format('opentype'), /* Safari, Android, iOS */
     url('../fonts/HelveticaLTStd-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('../fonts/HelveticaLTStd-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/HelveticaLTStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/HelveticaLTStd-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/HelveticaLTStd-Bold.otf') format('opentype'), /* Safari, Android, iOS */
+    url('../fonts/HelveticaLTStd-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 body {
     font-family: 'Helvetica-Light', Arial, sans-serif;
+    font-size: 18px;
 }
+
 h1 {
     font-size: 41px;
+    margin-bottom: 22px;
 }
+
 h2 {
     font-size: 37px;
     font-weight: 100;
-    margin: 0 0 10px;
+    margin-bottom: 38px;
+
 }
+
+h3 {
+    font-size: 31px;
+    margin-bottom: 38px;
+}
+
+h4 {
+    font-size: 23px;
+    margin-bottom: 43px;
+
+}
+
+h5 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+h6 {
+    font-size: 19px;
+    margin-bottom: 28px;
+}
+
+p {
+    margin-bottom: 38px;
+}
+
+a {
+    color: $crimson;
+    &:hover {
+        color: $black;
+    }
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul li {
+}
+
+ol {
+    list-style: decimal;
+    color: $black;
+    font-size: 18px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+blockquote {
+    font-size: 18px;
+    margin-bottom: 38px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number] {
+    padding: 8px;
+    border: 2px solid $alto;
+    width: 100%;
+    background: $white !important;
+    height: auto !important;
+    display: inline-block;
+    color: $black;
+}
+
+#myselect {
+    padding: 8px;
+    border: 2px solid #dadada;
+    width: 100%;
+    background: $white;
+    height: auto;
+    display: inline-block;
+    color: $black;
+
+}
+
+textarea {
+    resize: none;
+    color: $black;
+    font-size: 18px;
+    width: 100%;
+    border: 2px solid #dadada;
+    padding: 10px;
+    outline: none;
+    height: 147px;
+}
+
+.btn, input[type=submit], button {
+    font-size: 20px;
+    color: $white;
+    text-transform: uppercase;
+    background: #ed1c24;
+    padding: 0 104px 0 104px;
+    line-height: 52px;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        background: $black;
+        color: $white;
+
+    }
+}
+
+.button {
+    font-size: 20px;
+    color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: $crimson;
+    padding: 0 73px 0 73px;
+    line-height: 52px;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        background: $black;
+        color: $white;
+
+    }
+
+}
+
