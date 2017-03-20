@@ -70,7 +70,7 @@
             }
             &:hover {
                 > a {
-
+                    color: $crimson;
                 }
                 > ul {
                     display: block;
@@ -81,7 +81,7 @@
                 top: 60px;
                 left: 0;
                 z-index: 1000;
-                background: red;
+                background: $crimson;
                 line-height: 5px;
                 display: none;
                 li {
@@ -92,9 +92,14 @@
                         line-height: 40px;
                         width: 201px;
                         float: none;
-                        color: #ffffff;
+                        color: $white;
                         &:hover {
-                            color: #ffffff;
+                            background: $white;
+                        }
+                    }
+                    &:hover {
+                        > a {
+                            background: $white;
                         }
                     }
                 }
