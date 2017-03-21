@@ -413,6 +413,32 @@ textarea {
         background: #ffffff;
         color: #ed1c24; }
 
+#bannerInner {
+  position: relative;
+  margin: 0 0 70px; }
+  #bannerInner img {
+    width: 100%; }
+  #bannerInner .bannerOverlay {
+    width: 615px;
+    height: 272px;
+    background: #000000;
+    position: absolute;
+    border: 3px solid #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 37px 20px 0 20px; }
+    #bannerInner .bannerOverlay h1 {
+      color: #ffffff;
+      font-size: 41px;
+      margin-bottom: 22px; }
+    #bannerInner .bannerOverlay p {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px; }
+
 #homeContent {
   padding: 120px 0 154px 0; }
   #homeContent .container {
