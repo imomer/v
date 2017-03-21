@@ -414,6 +414,8 @@ textarea {
 
 #homeContent {
   padding: 120px 0 154px 0; }
+  #homeContent .container {
+    overflow: hidden; }
   #homeContent .homeContentLeft {
     width: 564px;
     float: left; }
@@ -566,7 +568,8 @@ textarea {
   padding: 140px 0 140px 0; }
   #contactUs .container {
     background: #ed1c24;
-    padding: 0; }
+    padding: 0;
+    overflow: hidden; }
     #contactUs .container .contactForm {
       float: left;
       width: 50%;

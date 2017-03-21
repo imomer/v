@@ -6,6 +6,7 @@
     .container {
         background: $crimson;
         padding: 0;
+        overflow: hidden;
         .contactForm {
             float: left;
             width: 50%;
