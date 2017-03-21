@@ -314,7 +314,7 @@ textarea {
       margin-bottom: 28px; }
     #upperFooter .upperFooterRight ul {
       list-style: none;
-      margin-bottom: 10px; }
+      margin: 0 0 10px; }
     #upperFooter .upperFooterRight li {
       line-height: 23px; }
     #upperFooter .upperFooterRight a {
@@ -375,7 +375,8 @@ textarea {
       color: #000000; }
 
 #banner {
-  position: relative; }
+  position: relative;
+  margin: 0 0 70px; }
   #banner img {
     width: 100%; }
   #banner .bannerOverlay {
@@ -494,10 +495,15 @@ textarea {
     #breadCrumbs a:hover {
       color: #000000; }
 
+#catalogue h2 {
+  text-align: center; }
+
 /* ==== Tabs ==== */
 .tabWrap ul {
   border-bottom: #ededed 1px solid;
-  height: 43px; }
+  height: 43px;
+  margin: 0;
+  text-align: center; }
   .tabWrap ul li {
     display: inline-block;
     margin: 0 5px; }

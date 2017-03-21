@@ -24,8 +24,8 @@
         width: 100%;
     }
 }
-// breadCrumbs //
 
+// breadCrumbs //
 #breadCrumbs{
     background: $alabaster;
     border-top: 1px solid $gallery;
@@ -46,6 +46,14 @@
         }
     }
 }
+
+// Catalogue
+#catalogue {
+    h2 {
+        text-align: center;
+    }
+}
+
 // contentCatalogue //
 #contentCatalogue{
 
