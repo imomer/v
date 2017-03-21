@@ -702,3 +702,50 @@ textarea {
         background: #ffffff;
         color: #ed1c24;
         font-family: 'Helvetica-Bold'; }
+
+#officeTabs {
+  padding: 30px 0 0;
+  text-align: center; }
+  #officeTabs .offWrap {
+    display: flex; }
+    #officeTabs .offWrap address {
+      padding: 53px 16px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: left;
+      font-style: normal;
+      flex: 1; }
+      #officeTabs .offWrap address:nth-child(even) {
+        background: #faf9f9; }
+      #officeTabs .offWrap address:nth-child(1) {
+        position: relative;
+        padding-left: 56px; }
+        #officeTabs .offWrap address:nth-child(1):before {
+          background: #ed1c24;
+          width: 40px;
+          height: 40px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          font-size: 23px;
+          font-family: 'FontAwesome';
+          content: '\f041';
+          position: absolute;
+          left: 0; }
+      #officeTabs .offWrap address:nth-child(2) {
+        position: relative;
+        padding-left: 56px; }
+        #officeTabs .offWrap address:nth-child(2):before {
+          background: #ed1c24;
+          width: 40px;
+          height: 40px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          font-size: 23px;
+          font-family: 'FontAwesome';
+          content: '\f095';
+          position: absolute;
+          left: 0; }
