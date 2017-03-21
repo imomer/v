@@ -438,6 +438,13 @@ textarea {
       font-size: 18px;
       line-height: 28px;
       margin-bottom: 20px; }
+  #bannerInner.catalogueBanner .bannerOverlay {
+    height: auto !important;
+    line-height: 154px;
+    padding-top: 0;
+    padding-bottom: 0; }
+    #bannerInner.catalogueBanner .bannerOverlay h1 {
+      margin: 0 !important; }
 
 #homeContent {
   padding: 120px 0 154px 0; }
@@ -489,20 +496,40 @@ textarea {
 #exploreCatalogue {
   text-align: center;
   padding: 65px 0 120px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   #exploreCatalogue h2 {
     margin: 0 0 20px; }
   #exploreCatalogue .tabWrap ul {
     margin: 0 0 80px; }
   #exploreCatalogue .post {
     float: left;
-    padding: 40px 0 0;
     margin: 0 0 30px; }
+    #exploreCatalogue .post div {
+      top: 40px; }
+    #exploreCatalogue .post:hover div {
+      top: 0; }
   #exploreCatalogue .cat1 {
     height: 360px;
     width: 100% !important; }
   #exploreCatalogue .slideShowControls {
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    top: 375px;
+    left: 0;
+    z-index: 10000;
+    font-size: 30px; }
+    #exploreCatalogue .slideShowControls a {
+      width: 43px;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.6);
+      line-height: 76px;
+      text-align: center;
+      color: #121212; }
+      #exploreCatalogue .slideShowControls a:first-child {
+        float: left; }
+      #exploreCatalogue .slideShowControls a:last-child {
+        float: right; }
 
 #breadCrumbs {
   background: #faf9f9;
@@ -560,8 +587,7 @@ textarea {
   width: 291px;
   height: 293px;
   text-align: left;
-  position: relative;
-  background: #000000; }
+  position: relative; }
   .post img {
     width: 100%;
     vertical-align: top; }
