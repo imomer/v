@@ -454,12 +454,16 @@ textarea {
   #exploreCatalogue h2 {
     margin: 0 0 20px; }
   #exploreCatalogue .tabWrap ul {
-    margin: 0 0 125px; }
+    margin: 0 0 80px; }
   #exploreCatalogue .post {
     float: left;
-    padding: 40px 0 0; }
+    padding: 40px 0 0;
+    margin: 0 0 30px; }
   #exploreCatalogue .cat1 {
-    height: 360px; }
+    height: 360px;
+    width: 100% !important; }
+  #exploreCatalogue .slideShowControls {
+    width: 100%; }
 
 /* ==== Tabs ==== */
 .tabWrap ul {

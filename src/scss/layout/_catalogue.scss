@@ -8,14 +8,19 @@
     }
     .tabWrap {
         ul {
-            margin: 0 0 125px;
+            margin: 0 0 80px;
         }
     }
     .post {
         float: left;
         padding: 40px 0 0;
+        margin: 0 0 30px;
     }
     .cat1 {
         height: 360px;
+        width: 100% !important;
+    }
+    .slideShowControls {
+        width: 100%;
     }
 }
