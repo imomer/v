@@ -1,8 +1,10 @@
 // Catalogue posts
 .post {
     width: 291px;
-    height: 296px;
+    height: 293px;
     text-align: left;
+    position: relative;
+    background: $black;
     img {
         width: 100%;
         vertical-align: top;
@@ -13,6 +15,7 @@
         line-height: 40px;
         transition: line-height 150ms, background 150ms, padding 150ms, color 150ms;
         margin: 0;
+        background: #fff;
         i {
             width: 21px;
             height: 21px;
@@ -33,16 +36,18 @@
     }
     div {
         width: 291px;
-        transition: width 150ms, transform 150ms;
+        transition: width 150ms, top 150ms, left 150ms;
         z-index: 1;
-        position: relative;
-        transform: translate(0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     &:hover {
         div {
             width: 334px;
             z-index: 9999;
-            transform: translate(-22px, -35px);
+            top: -40px;
+            left: -20px;
         }
         h3 {
             line-height: 66px;

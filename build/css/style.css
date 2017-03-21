@@ -495,8 +495,15 @@ textarea {
     #breadCrumbs a:hover {
       color: #000000; }
 
-#catalogue h2 {
+#catalogue {
   text-align: center; }
+  #catalogue .container {
+    width: 1300px; }
+  #catalogue .post {
+    display: inline-block;
+    margin: 0 15px 80px; }
+  #catalogue .tabWrap ul {
+    margin: 0 0 100px; }
 
 /* ==== Tabs ==== */
 .tabWrap ul {
@@ -525,8 +532,10 @@ textarea {
 
 .post {
   width: 291px;
-  height: 296px;
-  text-align: left; }
+  height: 293px;
+  text-align: left;
+  position: relative;
+  background: #000000; }
   .post img {
     width: 100%;
     vertical-align: top; }
@@ -535,7 +544,8 @@ textarea {
     font-family: 'Helvetica-Bold';
     line-height: 40px;
     transition: line-height 150ms, background 150ms, padding 150ms, color 150ms;
-    margin: 0; }
+    margin: 0;
+    background: #fff; }
     .post h3 i {
       width: 21px;
       height: 21px;
@@ -553,14 +563,16 @@ textarea {
     text-decoration: none; }
   .post div {
     width: 291px;
-    transition: width 150ms, transform 150ms;
+    transition: width 150ms, top 150ms, left 150ms;
     z-index: 1;
-    position: relative;
-    transform: translate(0, 0); }
+    position: absolute;
+    top: 0;
+    left: 0; }
   .post:hover div {
     width: 334px;
     z-index: 9999;
-    transform: translate(-22px, -35px); }
+    top: -40px;
+    left: -20px; }
   .post:hover h3 {
     line-height: 66px;
     background: #000000;
