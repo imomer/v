@@ -48,7 +48,40 @@
 
     }
 }
+// bannerInner //
+#bannerInner{
+        position: relative;
+        margin: 0 0 70px;
+        img {
+            width: 100%;
+        }
+        .bannerOverlay {
+            width: 615px;
+            height: 272px;
+            background: $black;
+            position: absolute;
+            border: 3px solid $white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 37px 20px 0 20px;
+            h1 {
+                color: $white;
+                font-size: 41px;
+                margin-bottom: 22px;
+            }
+            p {
+                color: $white;
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
 
+        }
+
+
+}
 
 
 

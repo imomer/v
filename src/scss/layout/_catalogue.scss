@@ -26,22 +26,22 @@
 }
 
 // breadCrumbs //
-#breadCrumbs{
+#breadCrumbs {
     background: $alabaster;
     border-top: 1px solid $gallery;
     line-height: 52px;
     margin-bottom: 73px;
-    .container{
+    .container {
         color: $crimson;
         font-size: 15px;
         width: 1233px;
     }
-    a{
+    a {
         font-size: 15px;
         color: $silver;
         text-decoration: none;
         padding: 0 8px 0 0px;
-        &:hover{
+        &:hover {
             color: $black;
         }
     }
@@ -49,12 +49,22 @@
 
 // Catalogue
 #catalogue {
-    h2 {
-        text-align: center;
+    text-align: center;
+    .container {
+        width: 1300px;
+    }
+    .post {
+        display: inline-block;
+        margin: 0 15px 80px;
+    }
+    .tabWrap {
+        ul {
+            margin: 0 0 100px;
+        }
     }
 }
 
 // contentCatalogue //
-#contentCatalogue{
+#contentCatalogue {
 
 }
