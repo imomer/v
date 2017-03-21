@@ -12,7 +12,7 @@
                 display: none;
                 padding: 25px 0 0;
             }
-            &.activePro {
+            &.activePro:before {
                 content: '\f107';
                 font-family: FontAwesome;
                 position: absolute;

@@ -849,7 +849,7 @@ textarea {
   #productDetail .productTab li .productContent {
     display: none;
     padding: 25px 0 0; }
-  #productDetail .productTab li.activePro {
+  #productDetail .productTab li.activePro:before {
     content: '\f107';
     font-family: FontAwesome;
     position: absolute;

@@ -32,7 +32,7 @@ jQuery('.productTab li').click(function () {
       jQuery(this).parent().find('.productContent').slideToggle(150);
 //  
 //          
-                        jQuery(this).toggleClass('activeCat');
+                        jQuery(this).toggleClass('activePro');
 
   
          
