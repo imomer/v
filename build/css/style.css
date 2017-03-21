@@ -97,19 +97,42 @@ a {
   a:hover {
     color: #000000; }
 
-ul {
-  list-style: disc;
-  margin-left: 20px; }
+#content ul {
+  list-style: none; }
 
-ol {
-  list-style: decimal;
-  color: #000000;
-  font-size: 18px; }
-
-ol li {
-  margin-bottom: 10px;
+#content ul li {
   line-height: 28px;
+  margin-bottom: 40px;
+  position: relative;
   margin-left: 20px; }
+
+#content ul li::before {
+  content: "\25CF";
+  color: #ed1c24;
+  font-size: 18px;
+  left: -20px;
+  top: -2px;
+  position: absolute; }
+
+#content ol {
+  list-style: none;
+  color: #000000;
+  font-size: 18px;
+  /*    counter-reset: item;*/
+  margin-left: 20px; }
+
+#content ol li {
+  margin-bottom: 40px;
+  line-height: 28px;
+  counter-increment: li;
+  position: relative; }
+
+#content ol li:before {
+  content: counter(li) ". ";
+  color: #ed1c24;
+  left: -20px;
+  top: -2px;
+  position: absolute; }
 
 blockquote {
   font-size: 18px;
@@ -124,7 +147,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
   display: inline-block;
   color: #000000; }
 
-#myselect {
+.myselect {
   padding: 8px;
   border: 2px solid #dadada;
   width: 100%;
@@ -132,6 +155,9 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
   height: auto;
   display: inline-block;
   color: #000000; }
+
+select.active, input[type=email].active {
+  border: 2px solid #ed1c24; }
 
 textarea {
   resize: none;
@@ -567,6 +593,8 @@ textarea {
   .tabWrap ul li {
     display: inline-block;
     margin: 0 5px; }
+    .tabWrap ul li:before {
+      content: ""; }
     .tabWrap ul li a {
       color: #121212;
       text-decoration: none;
@@ -904,22 +932,30 @@ textarea {
             position: absolute;
             left: 12px; }
 
-#productDetail .productTab {
-  background: #ffffff;
-  border: 2px solid #dadada;
-  padding: 15px 20px 0;
-  position: relative;
-  margin-bottom: 10px; }
-  #productDetail .productTab li .productContent {
-    display: none;
-    padding: 25px 0 0; }
-  #productDetail .productTab li.activePro {
-    content: '\f107';
-    font-family: FontAwesome;
-    position: absolute;
-    right: 22px; }
-  #productDetail .productTab li:before {
-    content: '\f105';
-    font-family: FontAwesome;
-    position: absolute;
-    right: 22px; }
+#productDetail {
+  margin-bottom: 40px; }
+  #productDetail .productTab li {
+    background: #ffffff;
+    border: 2px solid #dadada;
+    padding: 15px 40px;
+    position: relative;
+    margin-bottom: 10px; }
+    #productDetail .productTab li:before {
+      content: counter(li) ". ";
+      color: #000000;
+      left: 18px;
+      top: 16px;
+      position: absolute; }
+    #productDetail .productTab li .productContent {
+      display: none;
+      padding: 25px 0 0; }
+    #productDetail .productTab li.activePro:after {
+      content: '\f106';
+      font-family: FontAwesome;
+      position: absolute;
+      right: 22px; }
+    #productDetail .productTab li:after {
+      content: '\f107';
+      font-family: FontAwesome;
+      position: absolute;
+      right: 22px; }

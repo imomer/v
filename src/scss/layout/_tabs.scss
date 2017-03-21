@@ -9,6 +9,9 @@
         li {
             display: inline-block;
             margin: 0 5px;
+            &:before {
+                content: "";
+            }
             a {
                 color: $codGray;
                 text-decoration: none;
