@@ -465,6 +465,23 @@ textarea {
   #exploreCatalogue .slideShowControls {
     width: 100%; }
 
+#breadCrumbs {
+  background: #faf9f9;
+  border-top: 1px solid #ededed;
+  line-height: 52px;
+  margin-bottom: 73px; }
+  #breadCrumbs .container {
+    color: #ed1c24;
+    font-size: 15px;
+    width: 1233px; }
+  #breadCrumbs a {
+    font-size: 15px;
+    color: #c4c4c4;
+    text-decoration: none;
+    padding: 0 8px 0 0px; }
+    #breadCrumbs a:hover {
+      color: #000000; }
+
 /* ==== Tabs ==== */
 .tabWrap ul {
   border-bottom: #ededed 1px solid;
