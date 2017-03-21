@@ -2,20 +2,20 @@
     font-family: 'Helvetica-Light';
     src: url('../fonts/HelveticaLTStd-Light.eot'); /* IE9 Compat Modes */
     src: url('../fonts/HelveticaLTStd-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/HelveticaLTStd-Light.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/HelveticaLTStd-Light.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/HelveticaLTStd-Light.otf') format('opentype'), /* Safari, Android, iOS */
-    url('../fonts/HelveticaLTStd-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+        url('../fonts/HelveticaLTStd-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/HelveticaLTStd-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/HelveticaLTStd-Light.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/HelveticaLTStd-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Helvetica-Bold';
     src: url('../fonts/HelveticaLTStd-Bold.eot'); /* IE9 Compat Modes */
     src: url('../fonts/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/HelveticaLTStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/HelveticaLTStd-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/HelveticaLTStd-Bold.otf') format('opentype'), /* Safari, Android, iOS */
-    url('../fonts/HelveticaLTStd-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+        url('../fonts/HelveticaLTStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/HelveticaLTStd-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/HelveticaLTStd-Bold.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/HelveticaLTStd-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -67,24 +67,51 @@ a {
     }
 }
 
-ul {
-    list-style: disc;
+#content ul {
+    list-style: none;
+
+}
+
+#content ul li {
+    line-height: 28px;
+    margin-bottom: 40px;
+    position: relative;
     margin-left: 20px;
+
+}
+#content ul li::before {
+    content: "\25CF";
+    color: $crimson;
+    font-size: 18px;
+    left: -20px;
+    top: -2px;
+    position: absolute
 }
 
-ul li {
-}
-
-ol {
-    list-style: decimal;
+#content ol {
+    list-style: none;
     color: $black;
     font-size: 18px;
+    /*    counter-reset: item;*/
+    margin-left: 20px;
+
 }
 
-ol li {
-    margin-bottom: 10px;
+#content ol li {
+    margin-bottom: 40px;
     line-height: 28px;
-    margin-left: 20px;
+    counter-increment: li;
+    position: relative;
+
+
+
+}
+#content ol li:before {
+    content: counter(li) ". ";          
+    color: $crimson;
+    left: -20px;
+    top: -2px;
+    position: absolute
 }
 
 blockquote {
@@ -102,7 +129,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
     color: $black;
 }
 
-#myselect {
+.myselect {
     padding: 8px;
     border: 2px solid #dadada;
     width: 100%;
@@ -111,6 +138,9 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
     display: inline-block;
     color: $black;
 
+}
+select.active, input[type=email].active {
+    border: 2px solid $crimson;
 }
 
 textarea {

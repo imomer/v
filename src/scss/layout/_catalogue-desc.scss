@@ -1,26 +1,36 @@
 
 
 #productDetail {
+    margin-bottom: 40px;
     .productTab{
-        background: $white;
+        
+        li {
+            background: $white;
             border:2px solid $alto;
-            padding:15px 20px 0;
+            padding:15px 40px;
             position: relative;
             margin-bottom: 10px;
-        li {
+            &:before {
+                content: counter(li) ". ";
+                color: $black;
+                left: 18px;
+                top: 16px;
+                position: absolute;
+            }
             .productContent{
                 display: none;
                 padding: 25px 0 0;
+                
             }
-            &.activePro:before {
-                content: '\f107';
+            &.activePro:after {
+                content: '\f106';
                 font-family: FontAwesome;
                 position: absolute;
                 right: 22px;
                 
             }
-             &:before {
-                        content: '\f105';
+             &:after {
+                        content: '\f107';
                         font-family: FontAwesome;
                         position: absolute;
                         right: 22px;

@@ -94,7 +94,7 @@
 </div>
 <!-- banner -->
 
-
+<div id="content">
 <div class="container">
    <h2 style="text-align: center;">Section Title With Column Examples / H2</h2>
 	<p style="text-align: center;">Regular text Lorem Ipsum is simply dummy text of the printing and typesetting industry
@@ -195,18 +195,35 @@
         condimentum, leo non mollis mollis, erat diam volutpat est, eu tempus eros eros nec lectus. Morbi vestibulum
         lobortis justo, vel iaculis nibh commodo vitae.
     </blockquote>
-    <p><input type="text" value="Text Field" required></p>
-    <p><input type="tel" value="Telephone Field"></p>
-    <p><input type="email" value="Email Field"></p>
-    <p><input type="number" value="0"></p>
-    <p><input type="password" value="password"></p>
-    <select id="myselect">
-        <option value="volvo">volvo</option>
+    <div style="width: 33%;  float: left;padding-right: 8px">
+         <p><input type="tel" value="Phone number"></p>
+         <select class="myselect">
+        <option value="state">state</option>
         <option value="saab">saab</option>
         <option value="vw">vw</option>
         <option value="audi">audi</option>
     </select>
-    </p>
+    </div>
+    <div style="width: 33%;  float: left;padding-right: 8px">
+        <p><input type="email" value="Email address"></p>
+           <select class="myselect">
+        <option value="state">country</option>
+        <option value="saab">saab</option>
+        <option value="vw">vw</option>
+        <option value="audi">audi</option>
+    </select>
+    </div>
+    <div style="width: 33%;  float: left;">
+   <p><input type="email" value="Email address" class="active"></p>
+           <select class="myselect active">
+        <option value="state">country</option>
+        <option value="saab">saab</option>
+        <option value="vw">vw</option>
+        <option value="audi">audi</option>
+    </select>
+    </div>
+    <div class="clear"></div>
+    <p>&nbsp;</p>
     <div class="greyWrap">
         <div class="container">
             <p><a href="#">Sed felis est, placerat a ornare vel</a>, tempor id est. Phasellus ac urna vitae massa
@@ -231,6 +248,7 @@
     <p><textarea rows="4">Your Comments</textarea></p>
     <p><a class="button" href="#">Enquire Now</a></p>
     <p><input type="submit" value="Submit"></p>
+</div>
 </div>
 <!-- footer -->
 <footer id="upperFooter">
