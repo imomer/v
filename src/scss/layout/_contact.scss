@@ -1,28 +1,27 @@
 // contactUs //
-#contactUs{
+#contactUs {
     background: $alabaster;
-    padding: 140px 0 140px 0 ;
+    padding: 140px 0 140px 0;
 
-    .container{
+    .container {
         background: $crimson;
         padding: 0;
-
-        .contactForm{
+        .contactForm {
             float: left;
             width: 50%;
             padding: 40px 65px 0 65px;
-            h2{
+            h2 {
                 color: $white;
                 font-size: 37px;
                 margin-bottom: 11px;
             }
-           p{
-               color: $white;
-               font-size: 18px;
-               line-height: 26px;
-               margin-bottom: 18px;
-           }
-            input[type=phone]{
+            p {
+                color: $white;
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 18px;
+            }
+            input[type=phone] {
                 background: $white;
                 padding: 8px;
                 font-size: 15px;
@@ -33,31 +32,7 @@
                 line-height: 23px;
                 margin-bottom: 17px;
             }
-            input[type=email]{
-                background: $white;
-                padding: 8px;
-                font-size: 15px;
-                width: 100%;
-                height: auto !important;
-                display: inline-block;
-                color: $black;
-                line-height: 23px;
-                margin-bottom: 17px;
-                border: none;
-            }
-            input[type=name]{
-                background: $white;
-                padding: 8px;
-                width: 100%;
-                font-size: 15px;
-                height: auto !important;
-                display: inline-block;
-                color: $black;
-                line-height: 23px;
-                margin-bottom: 17px;
-                border: none;
-            }
-            input[type=Company]{
+            input[type=email] {
                 background: $white;
                 padding: 8px;
                 font-size: 15px;
@@ -69,7 +44,7 @@
                 margin-bottom: 17px;
                 border: none;
             }
-            input[type=Country]{
+            input[type=name] {
                 background: $white;
                 padding: 8px;
                 width: 100%;
@@ -81,7 +56,31 @@
                 margin-bottom: 17px;
                 border: none;
             }
-            input[type=text]{
+            input[type=Company] {
+                background: $white;
+                padding: 8px;
+                font-size: 15px;
+                width: 100%;
+                height: auto !important;
+                display: inline-block;
+                color: $black;
+                line-height: 23px;
+                margin-bottom: 17px;
+                border: none;
+            }
+            input[type=Country] {
+                background: $white;
+                padding: 8px;
+                width: 100%;
+                font-size: 15px;
+                height: auto !important;
+                display: inline-block;
+                color: $black;
+                line-height: 23px;
+                margin-bottom: 17px;
+                border: none;
+            }
+            input[type=text] {
                 background: $white;
                 padding: 8px;
                 font-size: 15px;
@@ -115,14 +114,10 @@
                 line-height: 42px;
                 display: inline-block;
                 text-decoration: none;
-
                 &:hover {
                     background: $white;
                     color: $black;
-
-
                 }
-
             }
             #myselect {
                 background: $white;
@@ -136,18 +131,8 @@
                 margin-bottom: 17px;
                 border: none;
             }
-
-
-
-
-
-
-
-
-
-
         }
-        img{
+        img {
             float: right;
             vertical-align: top;
         }
