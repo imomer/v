@@ -13,6 +13,13 @@
             text-align:left;
             font-style: normal;
             flex:1;
+            a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                    color: $crimson;
+                }
+            }
 
 
             &:nth-child(even) {
@@ -41,6 +48,7 @@
              &:nth-child(2) {
                 position: relative;
                 padding-left: 56px;
+                text-align:center;
                 &:before {
                     background: $crimson;
                     width: 40px;
@@ -53,11 +61,52 @@
                     font-family: 'FontAwesome';
                     content: '\f095';
                     position: absolute;
-                    left: 0;
+                    left: 29px;
                     
+                }
+             }
+                &:nth-child(3) {
+                position: relative;
+                padding-left: 56px;
+                text-align:center;
+                &:before {
+                    background: $crimson;
+                    width: 40px;
+                    height: 40px;
+                    color: $white;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    font-size: 23px;
+                    font-family: 'FontAwesome';
+                    content: '\f1ac';
+                    position: absolute;
+                    left: 29px;
+                    
+                  }
+                }
+                &:nth-child(4) {
+                position: relative;
+                padding-left: 56px;
+                text-align:center;
+                &:before {
+                    background: $crimson;
+                    width: 40px;
+                    height: 40px;
+                    color: $white;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    font-size: 23px;
+                    font-family: 'FontAwesome';
+                    content: '\f0e0 ';
+                    position: absolute;
+                    left: 12px;
+                    
+                  }
                 }
             }
         }
 
     }
-}
+

@@ -745,6 +745,11 @@ textarea {
       text-align: left;
       font-style: normal;
       flex: 1; }
+      #officeTabs .offWrap address a {
+        text-decoration: none;
+        color: #000000; }
+        #officeTabs .offWrap address a:hover {
+          color: #ed1c24; }
       #officeTabs .offWrap address:nth-child(even) {
         background: #faf9f9; }
       #officeTabs .offWrap address:nth-child(1) {
@@ -765,7 +770,8 @@ textarea {
           left: 0; }
       #officeTabs .offWrap address:nth-child(2) {
         position: relative;
-        padding-left: 56px; }
+        padding-left: 56px;
+        text-align: center; }
         #officeTabs .offWrap address:nth-child(2):before {
           background: #ed1c24;
           width: 40px;
@@ -778,4 +784,38 @@ textarea {
           font-family: 'FontAwesome';
           content: '\f095';
           position: absolute;
-          left: 0; }
+          left: 29px; }
+      #officeTabs .offWrap address:nth-child(3) {
+        position: relative;
+        padding-left: 56px;
+        text-align: center; }
+        #officeTabs .offWrap address:nth-child(3):before {
+          background: #ed1c24;
+          width: 40px;
+          height: 40px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          font-size: 23px;
+          font-family: 'FontAwesome';
+          content: '\f1ac';
+          position: absolute;
+          left: 29px; }
+      #officeTabs .offWrap address:nth-child(4) {
+        position: relative;
+        padding-left: 56px;
+        text-align: center; }
+        #officeTabs .offWrap address:nth-child(4):before {
+          background: #ed1c24;
+          width: 40px;
+          height: 40px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          font-size: 23px;
+          font-family: 'FontAwesome';
+          content: '\f0e0 ';
+          position: absolute;
+          left: 12px; }
