@@ -18,5 +18,31 @@ jQuery(function(){
         jQuery(tabID).show();
 
     });
+    
+//    Catalogue description accordian
+jQuery('.productTab li').click(function () {
+  
+
+ 
+       
+//    if (jQuery(this).parent('ol').find('ol').length > 0) {
+//
+// 
+//           
+      jQuery(this).parent().find('.productContent').slideToggle(150);
+//  
+//          
+                        jQuery(this).toggleClass('activeCat');
+
+  
+         
+// return false;
+
+        
+//}
+
+
+   
+ });
 
 });
